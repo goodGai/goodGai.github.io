@@ -1,0 +1,129 @@
+subtitle:
+  enable: true
+  # Typewriter Effect (开启打字效果)
+  effect: true
+  # loop (循環打字)
+  loop: true
+  # source調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用搏天api的隨機語錄（簡體）
+  # source: 2  調用一言網的一句話（簡體）
+  # source: 3  調用一句網（簡體）
+  # source: 4  調用今日詩詞（簡體）
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
+  source: false
+  # 如果有英文逗号' , ',请使用转义字元 &#44;
+  # 如果有英文双引号' " ',请使用转义字元 &quot;
+  # 开头不允許转义字元，如需要，请把整個句子用双引号包住
+  # 如果关闭打字效果，subtitle只会现示sub的第一行文字
+  sub:
+    - 做正确的事，然后接受它的事与愿违
+    - 塔塔开！！！
+    - 凡事发生必皆有利于我
+
+
+# 导航
+menu:
+  主页: / || fas fa-home
+  博文 || fa fa-graduation-cap:
+    分类: /categories/ || fa fa-archive
+    标签: /tags/ || fa fa-tags
+    归档: /archives/ || fa fa-folder-open
+  # 生活 || fas fa-list:
+  #   分享: /shuoshuo/ || fa fa-comments-o
+  #   相册: /photos/ || fa fa-camera-retro
+  #   音乐: /music/ || fa fa-music
+  #   影视: /movies/ || fas fa-video
+  友链: /links/ || fa fa-link
+  留言板: /comment/ || fa fa-paper-plane
+  #留言板: /messageboard/ || fa fa-paper-plane
+  关于笔者: /about/ || fas fa-heart  
+
+# 特殊
+highlight_theme: mac  #  darker / pale night / light / ocean / mac / mac light / false 代码主题
+highlight_copy: true # 复制按钮
+highlight_lang: false # 是否显示代码语言
+highlight_shrink: false # true: 代码块默认不展开 / false: 代码块默认展开 | none: 展开并隐藏折叠按钮
+highlight_height_limit: false # unit: px
+code_word_wrap: true #代码自动换行，关闭滚动条
+
+# 搜索
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # 如果没有查到内容相关内容显示、
+
+
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+copy:
+  enable: true # 是否开启网站复制权限
+  copyright:  # 复制的内容后面加上版权信息
+    enable: false  # 是否开启复制版权信息添加
+    limit_count: 50 # 字数限制，当复制文字大于这个字数限制时
+
+# 版权
+post_copyright:
+  enable: true
+  decode: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 侧边栏
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true # display on mobile
+  position: right # left or right 
+
+# 个人信息
+social:
+  fab fa-github: https://github.com/goodGai/ || Github
+  # fab fa-qq:  tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=728831102&website=www.oicqzone.com || QQ
+  # fas fa-envelope-open-text: mailto:1976083684@qq.com || Email
+
+# 公告栏
+card_announcement:
+    enable: true
+    content: 欢迎来到我的博客 #修改公告栏信息
+
+# toc (目錄)
+toc:
+  post: true
+  page: false
+  number: false
+  expand: true # 是否展开
+  style_simple: false # for post
+  scroll_percent: true
+
+# footer是否显示图片背景(与top_img一致)
+footer_bg: true
+
+# wordcount (字數統計)
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# Share System (分享功能)
+# --------------------------------------
+
+# AddThis
+# https://www.addthis.com/
+addThis:
+  enable: false
+  pubid:  #访问 AddThis 官网, 找到你的 pub-id
+
+# Share.js
+# https://github.com/overtrue/share.js
+sharejs:
+  enable: true  
+  sites: facebook,twitter,wechat,weibo,qq  #想要显示的内容
+
+# AddToAny
+# https://www.addtoany.com/
+addtoany:
+  enable: false
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
