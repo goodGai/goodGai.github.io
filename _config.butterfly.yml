@@ -86,7 +86,7 @@ social:
 # 公告栏
 card_announcement:
     enable: true
-    content: 欢迎来到我的博客 #修改公告栏信息
+    content: 我在鹅厂当外包
 
 # toc (目錄)
 toc:
